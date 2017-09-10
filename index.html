@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang = "en">
+  <head>
+    <title>Dmitri&rsquo;s Portfolio</title>
+    <meta name="google-site-verification" content="HvC8F7tfjDxymFXnrpVyHRWxUXvLwKYPt3C24ut_aXQ" />
+    <!-- Google Analytics -->
+    <script>
+    window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+    ga('create', 'UA-92043516-1', 'auto');
+    ga('send', 'pageview');
+    </script>
+    <script async src='https://www.google-analytics.com/analytics.js'></script>
+    <!-- End Google Analytics -->
+    <meta charset = "utf-8">
+    <link rel = "icon" type = "image/png" href = "data/images/favicon.ico">
+    <meta name = "description" content = "My Portfolio">
+    <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+    <script src="https://use.fontawesome.com/c87ebe651f.js"></script>
+    <link rel = "stylesheet" href = "homepage.css">
+    <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src = "https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+    <script src = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+    <script src = "https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js"></script>
+    <!--script type = "text/javascript" src = "../node_modules/artyom.js/src/artyom.min.js"></script-->
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.5/pixi.min.js"></script>
+    <script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.js"></script>
+    <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+    <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <link type = "text/css" rel = "stylesheet" href = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+  </head>
+
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
+
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#home"><span class="glyphicon glyphicon-home"></span> mamaliga.me</a>
+        </div>
+        <div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li><a href="#aboutMe"><span class="glyphicon glyphicon-info-sign"></span> About Me</a></li>
+              <li><a href="#myEducation"><span class="glyphicon glyphicon-education"></span> My Education</a></li>
+              <li><a href="#myEmployment"><span class="glyphicon glyphicon-briefcase"></span> My Employment</a></li>
+              <li><a href="#myWork"><span class="glyphicon glyphicon-tasks"></span> My Work</a></li>
+              <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-cloud-download"></span> Downloads <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="#myResume"><span class="glyphicon glyphicon-list-alt"></span> My Resume</a></li>
+                  <li><a href="#javaServer"><span class="glyphicon glyphicon-file"></span> Java Server</a></li>
+                  <li><a href="#javaClient"><span class="glyphicon glyphicon-file"></span> Java Client</a></li>
+                </ul>
+              </li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+              <li><a href = "../maze-day/tenacious-typing.html"><span class="glyphicon glyphicon-sunglasses"></span> Tenacious Typing</a></li>
+              <li><a href="#"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div class="jumbotron" id = "home">
+      <div class="container text-center">
+        <h1>The Portfolio of Dmitri Grozdanov</h1>
+        <p>Student of Computer Science, UNC-Chapel Hill</p>
+        <img src="data/images/paris.jpg" alt="Paris" width="300" height="300">
+      </div>
+    </div>
+
+    <div id = "aboutMe" class = "container-fluid bg-3 text-center">
+      <h1>About Me</h1>
+      <p>
+        <a class = "btn btn-social-icon btn-lg btn-facebook">
+          <span class="fa fa-facebook"></span>
+        </a><br>
+        Hey there!<br><br>
+        My name is Dmitri and I am studying to become a computer scientist!<br>
+        I have had interest in coding ever since my uncle, who is a programmer himself, shared his Programming for Dummies book with me.<br>
+        In tenth grade, I took my first formal programming course and I absolutely loved it.<br>
+        I found it increadibly fascinating to be able to mould mathematics into anything I could imagine.<br>
+        My first website had a white background and flashing, purple text. It was awesome!
+      </p>
+    </div>
+    <div id="myEducation" class = "container-fluid bg-3 text-center">
+      <h1>My Education</h1>
+        <h4>UNC Chapel Hill</h4>
+        Chapel Hill, North Carolina (Class of 2018)<br>
+        B.S., Computer Science<br>
+        B.A., Romance Studies - Hispanic Literatures and Cultures
+        <h4>Centro Internacional de Estudios Culturales</h4>
+        Seville, Spain (May - June, 2016)<br>
+        UNC Spanish immersion summer study abroad program<br>
+        Studied Spanish language, literature, history, and culture
+    </div>
+
+    <div id="myEmployment" class = "container-fluid bg-3 text-center">
+      <h1>My Employment</h1>
+      <div class="row">
+        <div class="col-sm-3">
+          <h2>Accessible Web Developer</h2>
+        </div>
+        <div class="col-sm-3">
+          <h2>Assistant Programmer</h2>
+        </div>
+        <div class="col-sm-3">
+          <h2>Sales Consultant</h2>
+        </div>
+        <div class="col-sm-3">
+          <h2>Office Assistant</h2>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-3">
+          <h3>UNC Department of Computer Science</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>Startup</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>Best Buy</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>UNC Department of Computer Science</h3>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-3">
+          <h3>(August 2016 - Present)</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>(September 2015 - Present)</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>(October 2012 - Present)</h3>
+        </div>
+        <div class="col-sm-3">
+          <h3>(August 2014 - May 2016)</h3>
+        </div>
+      </div>
+      <div class = "row">
+        <div class="col-sm-3">
+          <img src="maze-day/media/logo.png" class="img-responsive" style="width:100%" alt="Web Developer">
+        </div>
+        <div class="col-sm-3">
+          <img src="data/images/agent.jpg" class="img-responsive" style="width:100%" alt="Assistant Programmer">
+        </div>
+        <div class="col-sm-3">
+          <img src="data/images/bestbuy.jpg" class="img-responsive" style="width:100%" alt="Sales Consultant">
+        </div>
+        <div class="col-sm-3">
+          <img src="data/images/profile.jpg" class="img-responsive" style="width:100%" alt="Office Assistant">
+        </div>
+      </div>
+    </div>
+
+    <div id="myWork" class = "container-fluid bg-3 text-center">
+      <h1>My Work</h1><br>
+      <div class="row">
+        <div class="col-sm-3">
+          <p>Some text..</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%;height:50%;" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <p>Some text..</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <p>Some text..</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%" alt="Image">
+        </div>
+        <div class="col-sm-3">
+          <p>Some text..</p>
+          <img src="https://placehold.it/150x80?text=IMAGE" class="img-responsive" style="width:100%;height:50%;" alt="Image">
+        </div>
+      </div>
+    </div>
+    <div id="myResume" class = "container-fluid bg-3 text-center">
+      <h1>My Resume</h1>
+      <p>
+        Temporarily removed due to privacy concern<!--a href = "data/files/resume_dgrozdanov.pdf"> Resume</a-->
+      </p>
+    </div>
+    <div id="javaServer" class = "container-fluid bg-3 text-center">
+      <h1>FTPServer.java</h1>
+      <p>
+        <a href = "data/files/FTPServer.java"> FTPServer.java</a>
+      </p>
+    </div>
+    <div id="javaClient" class = "container-fluid bg-3 text-center">
+      <h1>FTPClient.java</h1>
+      <p>
+        <a href = "data/files/FTPClient.java"> FTPClient.java</a>
+      </p>
+    </div>
+    <footer class="container-fluid text-center">
+      <p>
+        Copyright &copy; 2017 Dmitri Grozdanov. All rights reserved.<br>
+        The unauthorized use of the information enclosed herein is strictly prohibited.
+      </p>
+    </footer>
+  </body>
+</html>
