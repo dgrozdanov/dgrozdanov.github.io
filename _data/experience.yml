@@ -1,0 +1,56 @@
+ - institution: Sourcery Institute
+   title: Software Engineering Research Consultant
+   description: >
+                  Synthesize and test new, efficient communication patterns
+                  with automatic data dependency tracking for the parallel
+                  solution of nonlinear partial differential equations using
+                  Coarray Fortran, a parallel global address space (PGAS) language
+   begin: Jul 2014
+   end:
+   link: http://www.sourceryinstitute.org
+   img: img/experience/1.jpg
+   img_alt: Sourcery Institute Hat
+ - institution: University of Maryland
+   title: CRoCCo Lab Faculty Research Assistant
+   description: >
+                  Initialize, run and analyze very large Computational Fluid Dynamics
+                  research simulations of supersonic and hypersonic
+                  turbulent boundary layers, work with massive data sets and
+                  develop parallel, efficient algorithms for huge turbulence
+                  data sets
+   begin: Sep 2014
+   end:
+   link: http://croccolab.umd.edu
+   img: img/experience/2.jpg
+   img_alt: UMD Seal
+ - institution: Princeton University
+   title: Doctoral Candidate and Graduate Research Assistant
+   description: >
+                  <b>Anticipated PhD conferral:</b> May 2016 <br/>
+                  <b>Masters Degree:</b> June 2010 <br/>
+                  Research duties included preparing manuscripts for publication,
+                  giving talks at professional conferences and conducting research
+                  on hypersonic and supersonic turbulent boundary layers, training
+                  new graduate students and managing the lab's transition from
+                  Princeton University to UMD
+   begin: Sep 2007
+   end:
+   link: http://www.princeton.edu/mae/
+   img: img/experience/PU-Shield.jpg
+   img_alt: Princeton Seal
+ - institution: The George Washington University
+   title: B.S. MAE<br/>Undergraduate Research Assistant
+   description: >
+                  B.S. Mechanical and Aersopace Engineering, mathematics minor,
+                  <i>suma cum laude</i><br/>
+                  <b>2006 Goldwater Scholar</b> and recipient of the
+                  <b>Alfred Martin Freudenthal Prize</b> for the highest academic
+                  acheivement in <a href="http://www.seas.gwu.edu">GWU SEAS</a>.<br/>
+                  Undergraduate research assistant with the Flow Simulations and
+                  Analysis Group which has since <a href="http://engineering.jhu.edu/fsag/">
+                  moved to Johns Hopkins University</a>
+   begin: Sept 2003
+   end: May 2007
+   link: http://www.mae.seas.gwu.edu
+   img: img/experience/GW_SEAL.jpg
+   img_alt: GWU Seal
