@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang = "en">
+<head>
+  <title>Dmitri&rsquo;s Portfolio</title>
+  <!-- Google Analytics -->
+  <script>
+  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
+  ga('create', 'UA-92043516-1', 'auto');
+  ga('send', 'pageview');
+  </script>
+  <script async src='https://www.google-analytics.com/analytics.js'></script>
+  <!-- End Google Analytics -->
+  <meta charset = "utf-8">
+  <link rel = "icon" type = "image/png" href = "data/images/favicon.ico">
+  <meta name = "description" content = "My Portfolio">
+  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
+  <!--link rel = "stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"-->
+  <link rel = "stylesheet" href = "homepage.css">
+  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+  <script src = "https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
+  <script src = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
+  <script src = "https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js"></script>
+  <!--script type = "text/javascript" src = "../node_modules/artyom.js/src/artyom.min.js"></script-->
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.5/pixi.min.js"></script>
+  <script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.js"></script>
+  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <link type = "text/css" rel = "stylesheet" href = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
+  <script src = "homepage.js"></script>
+</head>
+
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+
+      <a class = "navbar-brand"> Dmitri Grozdanov</a>
+    </div>
+
+    <div class = "collapse navbar-collapse" id = "myNavbar">
+      <ul class = "nav navbar-nav">
+        <li class = "dropdown">
+          <a class = "dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list"></span> Maze Day Games<span class="caret"></span></a>
+          <ul class = "dropdown-menu">
+            <li><a href = "../maze-day/tenacious-typing.html"> Tenacious Typing</a></li>
+            <li><a href = "../maze-day/track-simulator.html"> Track Simulator</a></li>
+            <li><a href = "../maze-day/awesome-archery.html"> Awesome Archery</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <ul class = "nav navbar-nav navbar-right">
+        <li> <a href = "#home"> Home</a></li>
+        <li> <a href = "#about"> About Me</a></li>
+        <li> <a href = "#education"> Education</a></li>
+        <li> <a href = "#skills"> Skills</a></li>
+        <li> <a href = "#activities"> Activities</a></li>
+        <li> <a href = "#experience"> Experience</a></li>
+        <li> <a href = "#resume"> Resume</a></li>
+        <li> <a href = "#sample"> Sample Work</a></li>
+        <li> <a href = "maze-day.html"> Maze Day Games</a></li>
+        <li> <a href= "mailto:dmitri@cs.unc.edu"> Message Me</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+
+<a id = "home"> </a>
+
+<div class = "body-div">
+
+<img src = "data/images/ws.jpg" alt = "Busy at work" width = "30%" height = "30%">
+<h1>
+Dmitri Grozdanov
+</h1>
+<h2>
+Computer Science Student
+<br>
+UNC Chapel Hill
+</h2>
+</div>
+
+
+
+<a id = "about"> </a>
+<br><br>
+<h2> About Me </h2>
+<h4><q>Well, son, I&rsquo;ll tell you: Life for me ain&rsquo;t been no crystal stair,</q>
+- Langston Hughes</h4>
+
+
+
+<div class = "body-div">
+
+<p>
+Hi there! I&rsquo;m Dmitri, a Computer Science and Spanish Literature double major at UNC Chapel Hill.
+While that may all sound great, my life has not always been a crystal stair.
+</p>
+<p>
+I was born in this little country called Moldova. You may not have heard of it; it&rsquo;s that little stip of land
+between Romania and the Ukraine. Thanks to my mom, she and I were able to move to the US when I was just 7.
+My level of English competency was on par with that of an average first grader&rsquo;s Spanish skills in the US.
+Not very good, to say the least. They just threw me into second grade and told me, and I&rsquo;m paraphrasing:
+<q>We&rsquo;re gonna give you a year to prove yourself in a regular classroom, or else we&rsquo;ll demote you to first grade.</q>
+Sounds like a challenge, huh? Well, I sure did prove it to them. Within a year, I was taking advanced placement
+English classes like a boss!
+</p>
+<p>
+Let&rsquo;s skip ahead to high school. For the past ten years or so of my life, I had been pretty darn sure that I wanted
+to go into the aerospace industry and become an engineer, like both of my parents. Up to that point, I had never really
+given progamming a chance. Well luckily, my uncle was an up-and-coming programmer and he thought it would be a great
+idea to send me a book on coding. I opened it and quite obviously, I didn&rsquo;t understand a char[] of it
+(sorry, bad programmer joke). But then, as if by fate, I saw programming on my high school class catalog and I just knew
+that I had to take it. And guess what? I fell in love with it. The ability to mould the digital world around you is
+incredibly satisfying. For the first time in my life, I truly felt inspired to become someone great. Not great in terms
+of riches and fame, no, but rather, someone who is able to make a difference.
+</p>
+
+</div>
+
+<a id = "education"> </a>
+<br><br>
+
+
+<h2>My Education</h2>
+
+
+<div class = "body-div">
+
+<h4>UNC Chapel Hill</h4>
+Class of 2018  - 3.0 GPA
+<br>
+B.S., Computer Science
+<br>
+B.A., Romance Studies - Hispanic Literatures and Cultures
+
+<br><br>
+<h4>CINECU - University of Seville</h4>
+UNC Spanish immersion summer study abroad program
+<br>
+Studied Spanish language, literature, history, and culture
+
+</div>
+
+<a id = "skills"> </a>
+<br><br>
+
+
+<h2>My Skills</h2>
+
+
+<div class = "body-div">
+
+Studied Java (proficient) HTML/CSS/Javascript (intermediate), Python, MIPS Assembly,
+and C languages (beginner)
+<br><br>
+Excellent knowledge of Windows, OS X, and Linux-based operating systems
+<br><br>
+Currently taking classes on advanced web development and computer security
+<br><br>
+Experience with object-oriented programming, discrete and data structures, computer organization,
+internet services and protocols, and models of language and computation
+<br><br>
+Bilingual fluency in English and Russian; conversational in Spanish
+<br><br>
+Keyboard typing speed of up to 99 words-per-minute
+<br><br>
+Currently maintaining a private NGINX-based Linux server that hosts my own website (www.mamaliga.me)
+</div>
+
+<a id = "activities"> </a>
+<br><br>
+
+
+<h2>My Activities</h2>
+
+
+<div class = "body-div">
+
+HackNC Hack-a-thon
+<br><br>
+UNC Computer Science Club
+<br><br>
+UNC Computer Science Open House Guide
+<br><br>
+UNC Computer Science Maze Day
+<br><br>
+UNC Science Expo Computer Science Representative
+<br><br>
+Computer Literacy Tutor at an Elementary School
+
+</div>
+
+<a id = "experience"> </a>
+<br><br>
+
+
+<h2>My Experience</h2>
+
+
+<div class = "body-div">
+
+<table border = "1">
+<tr>
+<td><h3>Software Developer</h3></td>
+<td><h3>Startup</h3></td>
+<td><h3>Computers and Tech</h3></td>
+<td><h3>Research Support</h3></td>
+</tr>
+
+<tr>
+<td>
+<br>
+Accessible Web Developer
+<br>
+UNC Computer Science
+<br>
+August 2016 - present
+<br><br>
+Currently programming an
+accessible game with an
+audio interface
+<br>
+Planning to debut the
+game at Maze Day, an
+annual event held at UNC for
+visually impaired children
+<br>
+Working as part of a team
+under a UNC computer
+science professor
+<br>
+Will utilize Javascript in
+the program&rsquo;s development
+<br><br><br>
+Gary Bishop
+<br>
+Computer Science Professor
+<br>
+gb@cs.unc.edu
+</td>
+
+<td>
+<br>
+Android Programmer
+<br>
+Agent
+<br>
+September 2015 - present
+<br><br>
+Helped to create a startup
+alongside several of my dorm
+hallmates
+<br>
+Assisted in programming
+an Android app that makes
+online bookings simple for
+local bands and venues
+<br>
+Helped to create a server
+to host our app
+<br>
+Currently helping to
+market the app to potential
+clients and investors
+<br><br><br><br>
+Vignesh Balasubramaniam
+<br>
+Chief Android Programmer
+<br>
+viggy96@cs.unc.edu
+</td>
+
+<td>
+<br>
+Sales Consultant
+<br>
+Best Buy
+<br>
+October 2012 - Present
+<br><br>
+Consulted with customers about the latest hardware and software in the
+computer department
+<br>
+Demonstrated how to use Apple, Microsoft, and Google products to those
+lacking computer literacy
+<br>
+Collaborated with vendor representatives to learn more about the latest
+products coming to the consumer market
+<br><br><br><br><br>
+Edmond Eaddy
+<br>
+General Manager
+<br>
+edmond.eaddy@bestbuy.com
+</td>
+
+<td>
+<br>
+Office Assistant
+<br>
+UNC Computer Science
+<br>
+August 2014 - May 2016
+<br><br>
+Helped to administer the computer science department&rsquo;s WordPress website
+<br>
+Created spreadsheets and presentations
+<br>
+Oversaw the promotion and execution of department events
+<br>
+Collaborated with researchers, professors, and high-profile visitors
+<br><br>
+Melissa Wood
+<br>
+Business Manager
+<br>
+wood@cs.unc.edu
+</td>
+
+</tr>
+</table>
+
+</div>
+
+<a id = "resume"> </a>
+<br><br>
+
+
+<h2>My Resume</h2>
+
+
+<div class = "body-div">
+
+Please feel free to download a PDF copy of my resume:
+<br><br>
+<a href = "data/files/resume_dgrozdanov.pdf"> Resume</a>
+
+</div>
+
+<a id = "sample"> </a>
+<br><br>
+
+
+<h2>My Sample Work</h2>
+
+
+<div class = "body-div">
+
+The following two java files are intended to communicate together over terminal.
+Both pieces of code are from the final project of my Internet Protocols class
+and represent my own work.
+<br><br>
+<a href = "data/files/FTPClient.java"> FTPClient.java</a>
+<br><br>
+<a href = "data/files/FTPServer.java"> FTPServer.java</a>
+
+</div>
+
+<br><br><br><br>
+
+<footer>
+Copyright &copy; 2017 Dmitri Grozdanov. All rights reserved.
+The unauthorized use of the information enclosed herein is strictly prohibited.
+</footer>
+
+</body>
+</html>
