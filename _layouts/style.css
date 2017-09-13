@@ -1,5 +1,0 @@
-{% capture css %}
-{% include css/bootstrap.min.css %}
-{% include css/agency.css %}
-{% include css/font-awesome.css %}
-{% endcapture %}{{ css |  strip_newlines | replace:'	','' | replace:'    ','' | replace:'  ',' ' }}
