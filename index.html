@@ -1,375 +1,304 @@
 <!DOCTYPE html>
-<html lang = "en">
-<head>
-  <title>Dmitri&rsquo;s Portfolio</title>
-  <!-- Google Analytics -->
-  <script>
-  window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-  ga('create', 'UA-92043516-1', 'auto');
-  ga('send', 'pageview');
-  </script>
-  <script async src='https://www.google-analytics.com/analytics.js'></script>
-  <!-- End Google Analytics -->
-  <meta charset = "utf-8">
-  <link rel = "icon" type = "image/png" href = "data/images/favicon.ico">
-  <meta name = "description" content = "My Portfolio">
-  <meta name = "viewport" content = "width=device-width, initial-scale=1.0">
-  <!--link rel = "stylesheet" href="//netdna.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css"-->
-  <link rel = "stylesheet" href = "homepage.css">
-  <link rel = "stylesheet" href = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-  <script src = "https://www.gstatic.com/firebasejs/3.6.9/firebase.js"></script>
-  <script src = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.js"></script>
-  <script src = "https://cdn.rawgit.com/yahoo/xss-filters/master/dist/xss-filters.js"></script>
-  <!--script type = "text/javascript" src = "../node_modules/artyom.js/src/artyom.min.js"></script-->
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/pixi.js/4.3.5/pixi.min.js"></script>
-  <script src = "https://cdnjs.cloudflare.com/ajax/libs/howler/2.0.1/howler.js"></script>
-  <script src = "https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
-  <script src = "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
-  <link type = "text/css" rel = "stylesheet" href = "https://cdn.firebase.com/libs/firebaseui/1.0.0/firebaseui.css" />
-  <script src = "homepage.js"></script>
-</head>
+<html>
+<title>Dmitri Grozdanov</title>
+<meta charset="UTF-8">
+<link rel = "icon" type = "image/png" href = "data/favicons/grozdco.ico">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+html,body,h1,h2,h3,h4,h5,h6 {font-family: "Roboto", sans-serif}
+.white {
+  color: #ffffff;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Raleway", sans-serif}
+body, html {
+    height: 100%;
+    line-height: 1.8;
+}
+/* Full height image header */
+.bgimg-1 {
+    background-position: center;
+    background-size: cover;
+    background-image: url("data/images/morocco.jpg");
+    min-height: 100%;
+}
+.w3-bar .w3-button {
+    padding: 16px;
+}
+body,h1,h2,h3,h4,h5,h6 {font-family: "Lato", sans-serif;}
+body, html {
+    height: 100%;
+    color: #777;
+    line-height: 1.8;
+}
 
+/* Create a Parallax Effect */
+.bgimg-1, .bgimg-2 {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+/* Second image (Portfolio) */
+.bgimg-2 {
+    background-image: url("data/images/louvre.jpg");
+    min-height: 400px;
+}
+
+.w3-wide {letter-spacing: 10px;}
+.w3-hover-opacity {cursor: pointer;}
+
+/* Turn off parallax scrolling for tablets and phones */
+@media only screen and (max-device-width: 1024px) {
+    .bgimg-1, .bgimg-2, .bgimg-3 {
+        background-attachment: scroll;
+    }
+}
+</style>
 <body>
-<nav class="navbar navbar-inverse">
-  <div class="container-fluid">
-    <div class="navbar-header">
 
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-
-      <a class = "navbar-brand"> Dmitri Grozdanov</a>
-    </div>
-
-    <div class = "collapse navbar-collapse" id = "myNavbar">
-      <ul class = "nav navbar-nav">
-        <li class = "dropdown">
-          <a class = "dropdown-toggle" data-toggle="dropdown" href="#"><span class="glyphicon glyphicon-list"></span> Maze Day Games<span class="caret"></span></a>
-          <ul class = "dropdown-menu">
-            <li><a href = "../maze-day/tenacious-typing.html"> Tenacious Typing</a></li>
-            <li><a href = "../maze-day/track-simulator.html"> Track Simulator</a></li>
-            <li><a href = "../maze-day/awesome-archery.html"> Awesome Archery</a></li>
-          </ul>
-        </li>
-      </ul>
-
-      <ul class = "nav navbar-nav navbar-right">
-        <li> <a href = "#home"> Home</a></li>
-        <li> <a href = "#about"> About Me</a></li>
-        <li> <a href = "#education"> Education</a></li>
-        <li> <a href = "#skills"> Skills</a></li>
-        <li> <a href = "#activities"> Activities</a></li>
-        <li> <a href = "#experience"> Experience</a></li>
-        <li> <a href = "#resume"> Resume</a></li>
-        <li> <a href = "#sample"> Sample Work</a></li>
-        <li> <a href = "maze-day.html"> Maze Day Games</a></li>
-        <li> <a href= "mailto:dmitri@cs.unc.edu"> Message Me</a></li>
-      </ul>
-    </div>
+<!-- Navbar (sit on top) -->
+<div class="w3-top">
+  <div class="w3-bar" id="myNavbar">
+    <a class="w3-bar-item w3-button w3-hover-black w3-hide-medium w3-hide-large w3-right" href="javascript:void(0);" onclick="toggleFunction()" title="Toggle Navigation Menu">
+      <i class="fa fa-bars"></i>
+    </a>
+    <a href="#home" class="w3-bar-item w3-button">HOME</a>
+    <a href="#about" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-user"></i> ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button w3-hide-small"><i class="fa fa-th"></i> PORTFOLIO</a>
+    <a href="https://typing.grozd.co" class="w3-bar-item w3-button w3-hide-small"><i class="	fa fa-desktop"></i> SAMPLE PROJECT</a>
+    <a href="#" class="w3-bar-item w3-button w3-hide-small w3-right w3-hover-red">
+      <i class="fa fa-search"></i>
+    </a>
   </div>
-</nav>
 
-
-<a id = "home"> </a>
-
-<div class = "body-div">
-
-<img src = "data/images/ws.jpg" alt = "Busy at work" width = "30%" height = "30%">
-<h1>
-Dmitri Grozdanov
-</h1>
-<h2>
-Computer Science Student
-<br>
-UNC Chapel Hill
-</h2>
+  <!-- Navbar on small screens -->
+  <div id="navDemo" class="w3-bar-block w3-white w3-hide w3-hide-large w3-hide-medium">
+    <a href="#about" class="w3-bar-item w3-button" onclick="toggleFunction()">ABOUT</a>
+    <a href="#portfolio" class="w3-bar-item w3-button" onclick="toggleFunction()">PORTFOLIO</a>
+    <a href="https://typing.grozd.co" class="w3-bar-item w3-button" onclick="toggleFunction()">SAMPLE PROJECT</a>
+    <a href="#" class="w3-bar-item w3-button">SEARCH</a>
+  </div>
 </div>
 
-
-
-<a id = "about"> </a>
-<br><br>
-<h2> About Me </h2>
-<h4><q>Well, son, I&rsquo;ll tell you: Life for me ain&rsquo;t been no crystal stair,</q>
-- Langston Hughes</h4>
-
-
-
-<div class = "body-div">
-
-<p>
-Hi there! I&rsquo;m Dmitri, a Computer Science and Spanish Literature double major at UNC Chapel Hill.
-While that may all sound great, my life has not always been a crystal stair.
-</p>
-<p>
-I was born in this little country called Moldova. You may not have heard of it; it&rsquo;s that little stip of land
-between Romania and the Ukraine. Thanks to my mom, she and I were able to move to the US when I was just 7.
-My level of English competency was on par with that of an average first grader&rsquo;s Spanish skills in the US.
-Not very good, to say the least. They just threw me into second grade and told me, and I&rsquo;m paraphrasing:
-<q>We&rsquo;re gonna give you a year to prove yourself in a regular classroom, or else we&rsquo;ll demote you to first grade.</q>
-Sounds like a challenge, huh? Well, I sure did prove it to them. Within a year, I was taking advanced placement
-English classes like a boss!
-</p>
-<p>
-Let&rsquo;s skip ahead to high school. For the past ten years or so of my life, I had been pretty darn sure that I wanted
-to go into the aerospace industry and become an engineer, like both of my parents. Up to that point, I had never really
-given progamming a chance. Well luckily, my uncle was an up-and-coming programmer and he thought it would be a great
-idea to send me a book on coding. I opened it and quite obviously, I didn&rsquo;t understand a char[] of it
-(sorry, bad programmer joke). But then, as if by fate, I saw programming on my high school class catalog and I just knew
-that I had to take it. And guess what? I fell in love with it. The ability to mould the digital world around you is
-incredibly satisfying. For the first time in my life, I truly felt inspired to become someone great. Not great in terms
-of riches and fame, no, but rather, someone who is able to make a difference.
-</p>
-
+<!-- First Parallax Image with Logo Text -->
+<div class="bgimg-1 w3-display-container w3-opacity-min" id="home">
+  <div class="w3-display-middle" style="white-space:nowrap;">
+    <span class="w3-center w3-padding-large w3-black w3-xlarge w3-wide w3-animate-opacity">Dmitri Grozdanov / Software Engineer</span>
+  </div>
 </div>
 
-<a id = "education"> </a>
-<br><br>
-
-
-<h2>My Education</h2>
-
-
-<div class = "body-div">
-
-<h4>UNC Chapel Hill</h4>
-Class of 2018  - 3.0 GPA
-<br>
-B.S., Computer Science
-<br>
-B.A., Romance Studies - Hispanic Literatures and Cultures
-
-<br><br>
-<h4>CINECU - University of Seville</h4>
-UNC Spanish immersion summer study abroad program
-<br>
-Studied Spanish language, literature, history, and culture
-
+<!-- Container (About Section) -->
+<div class="w3-content w3-container w3-padding-64" id="about">
+  <h3 class="w3-center">ABOUT ME</h3><br>
+  <p class="w3-center">Hi there! My name is Dmitri. Thanks so much for visiting my website!</p>
+  <p class="w3-center">I am in my senior year at the University of North Carolina at Chapel Hill studying Computer Science.</p>
+  <p class="w3-center">Since May of 2017, I have also been an intern at IBM, where I work on a team of brilliant programmers on various cloud projects.</p>
+  <!-- <div class="w3-row">
+    <div class="w3-col m6 w3-center w3-padding-large">
+      <img src="data/images/profile.jpg" class="w3-round w3-image w3-center" alt="Photo of Me" width="500" height="333">
+    </div>
+  </div> -->
 </div>
 
-<a id = "skills"> </a>
-<br><br>
-
-
-<h2>My Skills</h2>
-
-
-<div class = "body-div">
-
-Studied Java (proficient) HTML/CSS/Javascript (intermediate), Python, MIPS Assembly,
-and C languages (beginner)
-<br><br>
-Excellent knowledge of Windows, OS X, and Linux-based operating systems
-<br><br>
-Currently taking classes on advanced web development and computer security
-<br><br>
-Experience with object-oriented programming, discrete and data structures, computer organization,
-internet services and protocols, and models of language and computation
-<br><br>
-Bilingual fluency in English and Russian; conversational in Spanish
-<br><br>
-Keyboard typing speed of up to 99 words-per-minute
-<br><br>
-Currently maintaining a private NGINX-based Linux server that hosts my own website (www.mamaliga.me)
+<!-- Second Parallax Image with Portfolio Text -->
+<div class="bgimg-2 w3-display-container w3-opacity-min" id = "portfolio">
+  <div class="w3-display-middle">
+    <span class="w3-xxlarge w3-text-white w3-wide">PORTFOLIO</span>
+  </div>
 </div>
 
-<a id = "activities"> </a>
-<br><br>
+<!-- *********************************** -->
+<!-- <body class="w3-light-grey"> -->
+
+<!-- Page Container -->
+<div class="w3-content w3-margin-top" style="max-width:1400px;">
+
+  <!-- The Grid -->
+  <div class="w3-row-padding">
+
+    <!-- Left Column -->
+    <div class="w3-third" id = "about">
+
+      <div class="w3-white w3-text-grey w3-card-4">
+        <div class="w3-display-container">
+          <img src="data/images/dmitri.jpg" style="width:100%" alt="Avatar">
+          <div class="w3-display-bottomleft w3-container w3-text-black">
+            <h2 class = "white">Dmitri Grozdanov</h2>
+          </div>
+        </div>
+        <div class="w3-container">
+          <p><i class="fa fa-briefcase fa-fw w3-margin-right w3-large w3-text-teal"></i>Software Engineer/Student</p>
+          <p><i class="fa fa-home fa-fw w3-margin-right w3-large w3-text-teal"></i>Chapel Hill, NC</p>
+          <p><i class="fa fa-envelope fa-fw w3-margin-right w3-large w3-text-teal"></i>dmitri@cs.unc.edu</p>
+          <hr>
+
+          <p class="w3-large"><b><i class="fa fa-asterisk fa-fw w3-margin-right w3-text-teal"></i>Skills</b></p>
+          <p>Javascript</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:90%">90%</div>
+          </div>
+          <p>UI</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:75%">75%</div>
+          </div>
+          <p>Node.js</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">
+              <div class="w3-center w3-text-white">65%</div>
+            </div>
+          </div>
+          <p>Java</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:65%">65%</div>
+          </div>
+          <p>Scala</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <p>Python</p>
+          <div class="w3-light-grey w3-round-xlarge w3-small">
+            <div class="w3-container w3-center w3-round-xlarge w3-teal" style="width:50%">50%</div>
+          </div>
+          <br>
+
+          <p class="w3-large w3-text-theme"><b><i class="fa fa-globe fa-fw w3-margin-right w3-text-teal"></i>Languages</b></p>
+          <p>English</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Russian</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:100%"></div>
+          </div>
+          <p>Spanish</p>
+          <div class="w3-light-grey w3-round-xlarge">
+            <div class="w3-round-xlarge w3-teal" style="height:24px;width:75%"></div>
+          </div>
+          <br>
+        </div>
+      </div><br>
+
+    <!-- End Left Column -->
+    </div>
+
+    <!-- Right Column -->
+    <div class="w3-twothird" id = "work">
+
+      <div class="w3-container w3-card-2 w3-white w3-margin-bottom">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-suitcase fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Work Experience</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Client Manager, Software Engineer / Partisan Gerrymandering Detection</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2017 - <span class="w3-tag w3-teal w3-round">Current</span> / Chapel Hill, NC</h6>
+          <p>✤  Developed software in Node.js with an R backend that helps legislators and lawyers visualize potential gerrymandering within North Carolina.</p>
+          <p>✤  Served as primary contact between my group of four students and the client, a UNC-Chapel Hill professor of law.</p>
+          <p>✤  Participated in two week Agile sprints, weekly team and client meetings, and version control as part of a software development laboratory course.</p>
+          <br><hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Cloud Developer Intern / IBM</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May 2017 - <span class="w3-tag w3-teal w3-round">Current</span> / RTP, NC</h6>
+          <p>✤  Interned on IBM’s multinational cloud engineering and development team to enhance IBM’s internal transaction architecture.</p>
+          <p>✤  Worked on three projects: developing an analytics dashboard, finding ways to incorporate blockchain, and on Watson internet-of-things services.</p>
+          <p>✤  Completed discovery learning around and later applied knowledge of Scala, Node.js, and UI design to continuously enhance my team’s project.</p>
+          <p>✤  Heavily utilized RESTful APIs, Apache Zeppelin, Spark, HDFS, and SQL to run queries on big data and to send responses between endpoints.</p>
+          <p>✤  Exposed to version control of large repositories, daily meetings with teammates and management, and various Agile practices.</p>
+          <br><hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Sales Consultant / Best Buy</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Oct 2012 - Aug 2017 / Durham, NC</h6>
+          <p>✤  Worked on the salesfloor since the age of 16 to demo and sell computers, cameras, and car electronics.</p>
+          <br><hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Accessible Web Developer / UNC Department of Computer Science</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>Aug 2016 - May 2017 / Chapel Hill, NC</h6>
+          <p>✤  Worked to develop a learn-to-type game for blind children under the supervision of a distinguished professor of computer science.</p>
+          <p>✤  Utilized a mixture of Javascript, jQuery, SQL, Firebase, Bootstrap, Pixi.js creation engine, HTML5, and CSS3.</p>
+          <p>✤  Features an SSL certificate, XSS protection, Google Analytics, and Google Firebase for authentication and use as a scalable backend.</p>
+          <p>✤  Incorporated Pixi.js for displaying graphical elements (for parents, teachers, etc.) and Artyom.js for voice recognition (for blind users).</p>
+          <br><hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Assistant Programmer / Startup</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>September 2015 - October 2016 / Chapel Hill, NC</h6>
+          <p>✤  Worked on a startup with fellow UNC computer science and economics students.</p>
+          <p>✤  Assisted in the development of an Android app and a Polymer web app that makes online bookings simple for local bands and musicians.</p>
+          <p>✤  Helped to configure a Linux server to host our app and manage its database.</p>
+          <p>✤  Attended frequent “Carolina THINK” entrepreneurship club meetings to help market the app to potential clients and investors.</p>
+          <br><hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Office Assistant / UNC Department of Computer Science</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2014 - May 2016 / Chapel Hill, NC</h6>
+          <p>✤  Helped to administer the UNC computer science department’s WordPress website by posting articles, fixing links, and resolving errors.</p>
+          <p>✤  Directly assisted computer science professors with course logistics, scheduling, and by manipulating database information.</p>
+          <p>✤  Assisted with planning and staffing most events held in our department, where I was introduced to many employers, lecturers, and to Maze Day.</p>
+          <p>✤  Collaborated with building staff, researchers, professors, local media, and numerous high-profile visitors.</p>
+          <br><hr>
+        </div>
+      </div>
+
+      <div class="w3-container w3-card-2 w3-white" id = "education">
+        <h2 class="w3-text-grey w3-padding-16"><i class="fa fa-certificate fa-fw w3-margin-right w3-xxlarge w3-text-teal"></i>Education</h2>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>University of North Carolina at Chapel Hill</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>August 2014 - December 2017 / Chapel Hill, NC</h6>
+          <p>Bachelor of Science, Computer Science</p>
+          <hr>
+        </div>
+        <div class="w3-container">
+          <h5 class="w3-opacity"><b>Centro Internacional de Estudios Culturales</b></h5>
+          <h6 class="w3-text-teal"><i class="fa fa-calendar fa-fw w3-margin-right"></i>May - June 2016 / Seville, Spain</h6>
+          <p>Study Abroad / Spanish Language Immersion Experience</p>
+          <hr>
+        </div>
+      </div>
+
+    <!-- End Right Column -->
+    </div>
+
+  <!-- End Grid -->
+  </div>
 
 
-<h2>My Activities</h2>
-
-
-<div class = "body-div">
-
-HackNC Hack-a-thon
-<br><br>
-UNC Computer Science Club
-<br><br>
-UNC Computer Science Open House Guide
-<br><br>
-UNC Computer Science Maze Day
-<br><br>
-UNC Science Expo Computer Science Representative
-<br><br>
-Computer Literacy Tutor at an Elementary School
-
+  <!-- End Page Container -->
 </div>
 
-<a id = "experience"> </a>
-<br><br>
-
-
-<h2>My Experience</h2>
-
-
-<div class = "body-div">
-
-<table border = "1">
-<tr>
-<td><h3>Software Developer</h3></td>
-<td><h3>Startup</h3></td>
-<td><h3>Computers and Tech</h3></td>
-<td><h3>Research Support</h3></td>
-</tr>
-
-<tr>
-<td>
-<br>
-Accessible Web Developer
-<br>
-UNC Computer Science
-<br>
-August 2016 - present
-<br><br>
-Currently programming an
-accessible game with an
-audio interface
-<br>
-Planning to debut the
-game at Maze Day, an
-annual event held at UNC for
-visually impaired children
-<br>
-Working as part of a team
-under a UNC computer
-science professor
-<br>
-Will utilize Javascript in
-the program&rsquo;s development
-<br><br><br>
-Gary Bishop
-<br>
-Computer Science Professor
-<br>
-gb@cs.unc.edu
-</td>
-
-<td>
-<br>
-Android Programmer
-<br>
-Agent
-<br>
-September 2015 - present
-<br><br>
-Helped to create a startup
-alongside several of my dorm
-hallmates
-<br>
-Assisted in programming
-an Android app that makes
-online bookings simple for
-local bands and venues
-<br>
-Helped to create a server
-to host our app
-<br>
-Currently helping to
-market the app to potential
-clients and investors
-<br><br><br><br>
-Vignesh Balasubramaniam
-<br>
-Chief Android Programmer
-<br>
-viggy96@cs.unc.edu
-</td>
-
-<td>
-<br>
-Sales Consultant
-<br>
-Best Buy
-<br>
-October 2012 - Present
-<br><br>
-Consulted with customers about the latest hardware and software in the
-computer department
-<br>
-Demonstrated how to use Apple, Microsoft, and Google products to those
-lacking computer literacy
-<br>
-Collaborated with vendor representatives to learn more about the latest
-products coming to the consumer market
-<br><br><br><br><br>
-Edmond Eaddy
-<br>
-General Manager
-<br>
-edmond.eaddy@bestbuy.com
-</td>
-
-<td>
-<br>
-Office Assistant
-<br>
-UNC Computer Science
-<br>
-August 2014 - May 2016
-<br><br>
-Helped to administer the computer science department&rsquo;s WordPress website
-<br>
-Created spreadsheets and presentations
-<br>
-Oversaw the promotion and execution of department events
-<br>
-Collaborated with researchers, professors, and high-profile visitors
-<br><br>
-Melissa Wood
-<br>
-Business Manager
-<br>
-wood@cs.unc.edu
-</td>
-
-</tr>
-</table>
-
-</div>
-
-<a id = "resume"> </a>
-<br><br>
-
-
-<h2>My Resume</h2>
-
-
-<div class = "body-div">
-
-Please feel free to download a PDF copy of my resume:
-<br><br>
-<a href = "data/files/resume_dgrozdanov.pdf"> Resume</a>
-
-</div>
-
-<a id = "sample"> </a>
-<br><br>
-
-
-<h2>My Sample Work</h2>
-
-
-<div class = "body-div">
-
-The following two java files are intended to communicate together over terminal.
-Both pieces of code are from the final project of my Internet Protocols class
-and represent my own work.
-<br><br>
-<a href = "data/files/FTPClient.java"> FTPClient.java</a>
-<br><br>
-<a href = "data/files/FTPServer.java"> FTPServer.java</a>
-
-</div>
-
-<br><br><br><br>
-
-<footer>
-Copyright &copy; 2017 Dmitri Grozdanov. All rights reserved.
-The unauthorized use of the information enclosed herein is strictly prohibited.
+<!-- Footer -->
+<footer class="w3-container w3-teal w3-center w3-margin-top">
+  <a href="#home" class="w3-button w3-light-grey"><i class="fa fa-arrow-up w3-margin-right"></i>Return to the Top</a>
+  <p>&copy;2017 Dmitri Grozdanov</p>
+  <p>Powered by a self-hosted NGINX server</p>
+  <a href = "https://www.linkedin.com/in/dgrozdanov/"><i class="fa fa-linkedin w3-hover-opacity"></i></a>
 </footer>
+
+<script>
+// Change style of navbar on scroll
+window.onscroll = function() {myFunction()};
+function myFunction() {
+    var navbar = document.getElementById("myNavbar");
+    if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
+        navbar.className = "w3-bar" + " w3-card-2" + " w3-animate-top" + " w3-white";
+    } else {
+        navbar.className = navbar.className.replace(" w3-card-2 w3-animate-top w3-white", "");
+    }
+}
+
+// Used to toggle the menu on small screens when clicking on the menu button
+function toggleFunction() {
+    var x = document.getElementById("navDemo");
+    if (x.className.indexOf("w3-show") == -1) {
+        x.className += " w3-show";
+    } else {
+        x.className = x.className.replace(" w3-show", "");
+    }
+}
+</script>
 
 </body>
 </html>

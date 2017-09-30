@@ -1,0 +1,35 @@
+html {
+    overflow-y: scroll;
+}
+
+body {
+    position: relative;
+}
+#yellow {padding-top:50px;height:500px;color: #fff; background-color: #ffff00;}
+#home {padding-top:50px;height:500px;color: #fff; background-color: #99badd;}
+#aboutMe {padding-top:50px;height:500px;color: #fff; background-color: #1e88e5;}
+#myEducation {padding-top:50px;height:500px;color: #fff; background-color: #673ab7;}
+#myEmployment {padding-top:50px;height:1000px;color: #fff; background-color: #ff9800;}
+#myWork {padding-top:50px;height:500px;color: #fff; background-color: #551a8b;}
+#myResume {padding-top:50px;height:500px;color: #fff; background-color: #00bcd4;}
+#javaServer {padding-top:50px;height:500px;color: #fff; background-color: #009688;}
+#javaClient {padding-top:50px;height:500px;color: #fff; background-color: #ff0000;}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+    width: 20%;
+    margin: auto;
+}
+
+footer {
+  background-color: #f2f2f2;
+  padding: 25px;
+}
+
+.rotate90 {
+    -webkit-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
